@@ -52,6 +52,10 @@
   margin-left: 5%;
 }
 
+#detailComments {
+  text-align: left;
+}
+
 form {
   padding: 5px;
 }
