@@ -9,12 +9,30 @@
     <link rel="stylesheet" href="/public/style.css">
   </head>
   <body>
+    
     <header>
       <h1>
         <b>ISQA Project</b> - Personal Library
       </h1>
     </header>
-    <br>
+    
+    <div class='frontEnd'>
+    <div id='sampleui'>
+      <form id="newBookForm" class="border">
+        <input type="text" id="bookTitleToAdd" name="title" placeholder="New Book Title" style="width: 295px">
+        <button type="submit" value="Submit" id="newBook">Submit New Book!</button>
+      </form>
+      <div id='display'></div>          
+      <div id='bookDetail' class='border'>
+        <p id='detailTitle'>Select a book to see it's details and comments</p>
+        <ol id='detailComments'></ol>
+      </div>
+      <button id='deleteAllBooks'>Delete all books...</button>
+    </div>
+    <footer><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.org</a><br>Helen Maher</footer>
+   </div>
+
+    <hr style='margin: 50px'>
     <div id="userstories">
       <h2>User stories:</h2>
       <ol>
@@ -49,20 +67,6 @@
         <input type="text" name="comment" value=""><br>
         <input type="submit" value="Submit">
       </form>
-    </div>
-    <hr style='margin: 50px'>
-    <div id='sampleui'>
-      <h2 style="text-align: left">Sample Front-End:</h2>
-      <form id="newBookForm" class="border">
-        <input type="text" id="bookTitleToAdd" name="title" placeholder="New Book Title" style="width: 295px">
-        <button type="submit" value="Submit" id="newBook">Submit New Book!</button>
-      </form>
-      <div id='display'></div>          
-      <div id='bookDetail' class='border'>
-        <p id='detailTitle'>Select a book to see it's details and comments</p>
-        <ol id='detailComments'></ol>
-      </div>
-      <button id='deleteAllBooks'>Delete all books...</button>
     </div>
     <hr style='margin: 50px'>
 
