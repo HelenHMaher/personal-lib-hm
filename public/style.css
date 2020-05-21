@@ -12,6 +12,10 @@
 }
 
 .border {
+  border: 1px inset;
+}
+
+.frontEnd .border {
   color: var(--darkBrown);
   background: var(--light);
   border-width: 1px;
@@ -56,11 +60,11 @@
   text-align: left;
 }
 
-form {
+.frontEnd form {
   padding: 5px;
 }
 
-button {
+.frontEnd button {
   color: var(--darkBrown);
   border: 2px solid var(--lightBrown);
   border-radius: 2px;
@@ -73,24 +77,24 @@ button {
   height: 1.5rem;
 }
 
-button:active {
+.frontEnd button:active {
   outline: none;
   transform: scale(1.2);
 }
 
-button:hover {
+.frontEnd button:hover {
   border: 2px solid var(--darkBrown);
   background: white;
   color: black;
 }
 
-input {
+.frontEnd input {
   height: 1.5rem;
   border-radius: 2px;
   border: 2px solid grey;
 }
 
-a {
+.frontEnd a {
   text-decoration: none;
   color: black;
 }
