@@ -1,13 +1,45 @@
+:root {
+  --darkBrown: rgb(139, 93, 93);
+  --lightBrown: rgb(193, 145, 145);
+  --darkLight: rgb(240, 233, 233);
+  --light: rgb(247, 247, 247);
+  --seaGreen: rgb(117, 202, 195);
+}
+
+.frontEnd {
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+}
+
 .border {
-  border-style: inset;
+  color: var(--darkBrown);
+  background: var(--light);
   border-width: 1px;
   margin: 10px;
+  padding: 10px;
+  border: 2px solid var(--lightBrown);
+}
+
+#display li {
+  text-align: left;
+  max-width: 500px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+#display li:before {
+  content: "•";
+  padding-right: 8px;
+  color: var(--seaGreen);
 }
 
 #sampleui {
-  max-width: 450px;
-  margin-left: 5%;
-  height: 100%;
+  margin: auto;
+  background: var(--darkLight);
+  max-width: 600px;
+  border: 10px solid var(--seaGreen);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 #sampleposting {
@@ -22,4 +54,44 @@
 
 form {
   padding: 5px;
+}
+
+button {
+  color: var(--darkBrown);
+  border: 2px solid var(--lightBrown);
+  border-radius: 2px;
+  background: var(--darkLight);
+  outline: none;
+  font-size: 12px;
+  font-family: "Verdana", sans-serif;
+  margin: 5px;
+  cursor: pointer;
+  height: 1.5rem;
+}
+
+button:active {
+  outline: none;
+  transform: scale(1.2);
+}
+
+button:hover {
+  border: 2px solid var(--darkBrown);
+  background: white;
+  color: black;
+}
+
+input {
+  height: 1.5rem;
+  border-radius: 2px;
+  border: 2px solid grey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 12px;
 }

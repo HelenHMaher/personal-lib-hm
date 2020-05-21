@@ -126,7 +126,7 @@ module.exports = function (app) {
             {_id: new ObjectId(bookId)},
             {},
             {$inc: { num_of_comments : 1 }, $push: {comments: comment}},
-            { new: true, upsert: false },
+            { new:true, upsert: false },
             (err, data) => {
             if(err) res.json(`could not update ${bookId} ${err}`);
             const book = {
